@@ -16,7 +16,7 @@ public class FirstNonRepeatingCharInString {
     }
   }
 
-  public static char getIndexofFirstNonRepeatingChar(String str) {
+  public static char getIndexOfFirstNonRepeatingChar(String str) {
     getCharCounts(str);
     int index = -1, i;
     for (i = 0; i < str.length(); i++) {
@@ -33,6 +33,6 @@ public class FirstNonRepeatingCharInString {
   public static void main(String[] args) {
 
     System.out
-        .println("First non repeating char is : " + getIndexofFirstNonRepeatingChar("lifeislife"));
+        .println("First non repeating char is : " + getIndexOfFirstNonRepeatingChar("lifeislife"));
   }
 }
