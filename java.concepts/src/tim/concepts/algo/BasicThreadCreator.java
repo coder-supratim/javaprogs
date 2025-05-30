@@ -7,7 +7,7 @@ public class BasicThreadCreator {
 
     public static void main(String[] args) {
         // We will store the threads so that we can check if they are done
-        List<Thread> threads = new ArrayList<Thread>();
+        List<Thread> threads = new ArrayList<>();
         // We will create 500 threads
         for (int i = 0; i < 100; i++) {
             Runnable task = new RunnableTask(10000000L + i);
@@ -19,7 +19,7 @@ public class BasicThreadCreator {
             // Remember the thread for later usage
             threads.add(worker);
         }
-        int running = 0;
+        int running;
         do {
             running = 0;
             for (Thread thread : threads) {
