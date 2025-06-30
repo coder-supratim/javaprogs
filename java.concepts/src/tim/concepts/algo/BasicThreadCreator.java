@@ -19,7 +19,7 @@ public class BasicThreadCreator {
             // Remember the thread for later usage
             threads.add(worker);
         }
-        int running;
+        int running ;
         do {
             running = 0;
             for (Thread thread : threads) {
