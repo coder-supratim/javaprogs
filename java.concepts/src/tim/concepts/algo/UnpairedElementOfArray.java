@@ -22,7 +22,7 @@ public class UnpairedElementOfArray {
 
     List<Integer> unpairedElements = hm.entrySet().stream().filter(e -> e.getValue() == 1)
         .map(Map.Entry::getKey).collect(Collectors.toList());
-    System.out.println("Uppaired Element: " + unpairedElements);
+    System.out.println("Unpaired Element: " + unpairedElements);
   }
 
 }
